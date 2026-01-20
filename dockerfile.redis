@@ -1,0 +1,9 @@
+FROM redis:8.4.0
+
+EXPOSE 6379
+
+CMD ["redis-server"]
+
+# docker build -f dockerfile.redis -t my-redis .
+# docker run --rm -it -p 6379:6379 --name redis my-redis
+
